@@ -18,18 +18,14 @@ full_word = 0
 character = 0
 
 
-def main():    
+def reverse(reverso, first, final):    
     
-    full_word = input("Enter The Word(s) ").lower()                             #asking user for input
     choice_input = full_word                                                    #setting choice = to full_words
     
-    first = int(input("What Place In The Input Do You Want To Start At? "))     #asking user for start letter
-    final = int(input("What Place In The Input Do You Want To End At? "))       #asking user for the end letter
-    
-    bensvariable = choice_input[first:final]                                    #setting bens variable = choice_input
+    control = choice_input[first:final]                                         #setting bensvariable = choice_input
     output = ''                                                                 #output = space
-    for i in range(len(bensvariable)-1,-1,-1):                                  #reversing the output
-        output = output + bensvariable[i]                                       #output = variable + output
+    for i in range(len(control)-1,-1,-1):                                       #reversing the output
+        output = output + control[i]                                            #output = variable + output
     
     character = len(full_word)                                                  #finding how many characters there are in the word
     slice_obj1 = slice(0, first)                                                #slicing the 0 letter to the starting user input
@@ -42,10 +38,7 @@ def main():
     
     for i in range(len(middle)-1,-1,-1):                                        #reversing the output
         output_1 = output + middle[i]                                           #setting output equal to the middle plus initial output
-    output_1 = beginning + output + ending                                       #adding the revered output to the beginning and end output
-    print("Your New Word Is", output_1)                                         #printing out the final output
+    output_1 = beginning + output + ending                                      #adding the revered output to the beginning and end output
     
+    return output_1
     
-   
-if __name__ == '__main__':
-    main()
