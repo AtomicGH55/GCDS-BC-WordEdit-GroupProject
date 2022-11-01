@@ -16,13 +16,3 @@ def LeftShift(amount, string):  # these are the variables im using, but the PM w
     
     
     return shifted # the final result that we want 
- 
-def main():
-    print(LeftShift("somethingelse",5))
-    
-
-
-
-
-if __name__ == '__main__':
-    main()

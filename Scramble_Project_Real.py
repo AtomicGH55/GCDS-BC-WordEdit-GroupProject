@@ -6,6 +6,8 @@ Created on Oct 18, 2022
 import RightCirc
 import LeftCirc                                                                                     #Brings in functions
 import reverse
+import pm_project_leftshift
+import PM_project
 
 def main():
     
@@ -39,33 +41,49 @@ def main():
             
             function_split = data_split[counter].split("-")
             
-            if function_split[0] == (LS):
+            if function_split[0] == 'LS':
                 
-                running_str = LeftShift(running_str , function_split[1])
+                function_split1 = int(function_split[1])
+
+                running_str = pm_project_leftshift.LeftShift(running_str , function_split1)
                 
-            elif function_split[0] == (RS):
+            elif function_split[0] == 'RS':
                 
-                running_str = RightShift(running_str , function_split[1])
+                function_split1 = int(function_split[1])
+
+                running_str = PM_project.RightShift(running_str , function_split1)
                 
-            elif function_split[0] == (LC):
+            elif function_split[0] == 'LC':
                 
-                running_str = LeftCirc(running_str , function_split[1])
+                function_split1 = int(function_split[1])
+
+                running_str = LeftCirc.LeftCirc(running_str , function_split1)
                 
             elif function_split[0] == 'RC':
                 
-                running_str = RightCirc(running_str , function_split[1])
+                function_split1 = int(function_split[1])
+
+                running_str = RightCirc.righmost(running_str , function_split1)
                 
             elif function_split[0] == 'REV':
                 
                 scramble_split = list(function_split[1])
+
+                scramble_split0 = int(scramble_split[0])
+                scramble_split1 = int(scramble_split[1])
                 
-                running_str = Reverse(running_str , scramble_split[0] , scramble_split[1])
+                running_str = reverse.reverse(running_str , scramble_split0 , scramble_split1)
                 
             elif function_split[0] == 'MC':
                 
                 scramble_split = list(function_split[1])
                 
-                running_str = ChaosWord(running_str , scramble_split[0] , scramble_split[1] , scramble_split[2] , scramble_split[3])
+                scramble_split0 = int(scramble_split[0])
+                scramble_split1 = int(scramble_split[1])
+                scramble_split2 = int(scramble_split[2])
+                scramble_split3 = scramble_split[3]
+
+                running_str = ChaosWord(running_str , scramble_split0 , scramble_split1 , scramble_split2 , scramble_split3)
                 
             else:
                 print("DATA INPUT ERROR")
