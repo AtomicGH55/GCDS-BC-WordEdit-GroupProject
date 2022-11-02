@@ -18,10 +18,13 @@ full_word = 0
 character = 0
 
 
-def reverse(full_word, first, final):    
+def reverse(running_str, first, final):
     
-    full_word = reverso
-    choice_input = full_word                                                    #setting choice = to full_words
+    full_word = running_str
+    choice_input = running_str                                                    #setting choice = to full_words
+    
+    first = int(running_str)
+    final = int(running_str)
     
     control = choice_input[first:final]                                         #setting bensvariable = choice_input
     output = ''                                                                 #output = space
@@ -41,4 +44,5 @@ def reverse(full_word, first, final):
         output_1 = output + middle[i]                                           #setting output equal to the middle plus initial output
     output_1 = beginning + output + ending                                      #adding the revered output to the beginning and end output
     
-    print("the new word is", output_1)
+    print("the new word is", output_1)    
+    
