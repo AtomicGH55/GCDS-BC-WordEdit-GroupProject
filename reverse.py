@@ -23,6 +23,10 @@ def reverse(running_str, first, final):
     full_word = running_str
     choice_input = running_str                                                    #setting choice = to full_words
     
+    first = first - 1
+    
+    final = first + final
+
     character = len(full_word)                                                  #finding how many characters there are in the word
     slice_obj1 = slice(0, first)                                                #slicing the 0 letter to the starting user input
     slice_obj2 = slice(first, final)                                            #slicing the user input start and the user input end
