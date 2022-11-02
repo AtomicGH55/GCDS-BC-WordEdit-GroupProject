@@ -41,13 +41,13 @@ def main():
             
             function_split = data_split[counter].split("-")
             
-            if function_split[0] == 'LS':
+            if function_split[0] == 'RS':
                 
                 function_split1 = int(function_split[1])
 
                 running_str = pm_project_leftshift.LeftShift(running_str , function_split1)
                 
-            elif function_split[0] == 'RS':
+            elif function_split[0] == 'LS':
                 
                 function_split1 = int(function_split[1])
 

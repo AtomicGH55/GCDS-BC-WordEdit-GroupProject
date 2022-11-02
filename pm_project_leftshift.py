@@ -6,7 +6,7 @@ Created on Oct 26, 2022
 
 
 
-def LeftShift(amount, string):  # these are the variables im using, but the PM will make it so they work for the main 
+def LeftShift(string, amount):  # these are the variables im using, but the PM will make it so they work for the main 
     
     shifted = ''  # this is to show the string 
     shifted = string[:-amount]
