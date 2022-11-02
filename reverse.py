@@ -18,7 +18,7 @@ full_word = 0
 character = 0
 
 
-def reverse(reverso, first, final):    
+def reverse(full_word, first, final):    
     
     full_word = reverso
     choice_input = full_word                                                    #setting choice = to full_words
