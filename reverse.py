@@ -20,6 +20,7 @@ character = 0
 
 def reverse(reverso, first, final):    
     
+    full_word = reverso
     choice_input = full_word                                                    #setting choice = to full_words
     
     control = choice_input[first:final]                                         #setting bensvariable = choice_input
@@ -40,5 +41,4 @@ def reverse(reverso, first, final):
         output_1 = output + middle[i]                                           #setting output equal to the middle plus initial output
     output_1 = beginning + output + ending                                      #adding the revered output to the beginning and end output
     
-    return output_1
-    
+    print("the new word is", output_1)
