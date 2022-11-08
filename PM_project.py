@@ -8,10 +8,11 @@ def RightShift(string, amount): # these are the variables im using, but the PM w
     
     
     shifted = '' # this is to show the string 
-    shifted = string[-amount:]
+    shifted = string[amount:]
     
-    amount_of_hashtags = (len(string) - len(shifted)) * "#" 
-    shifted = amount_of_hashtags + shifted 
+
+    amount_of_hashtags = amount * "#" 
+    shifted = shifted + amount_of_hashtags
     
     
     
