@@ -4,6 +4,7 @@ Created on Oct 18, 2022
 @author: BCalhoun24
 '''
 import RightCirc
+import get_chaos_word
 import LeftCirc                                                                                     #Brings in functions
 import reverse
 import pm_project_leftshift
@@ -83,7 +84,7 @@ def main():
                 scramble_split2 = int(scramble_split[2])
                 scramble_split3 = scramble_split[3]
 
-                running_str = ChaosWord(running_str , scramble_split0 , scramble_split1 , scramble_split2 , scramble_split3)
+                running_str = get_chaos_word.get_chaos_word(running_str , scramble_split0 , scramble_split1 , scramble_split2 , scramble_split3)
                 
             else:
                 print("DATA INPUT ERROR")
